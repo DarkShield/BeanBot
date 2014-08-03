@@ -4,7 +4,6 @@ The Docker container contains both Hubot as well as Redis.
 
 ## Deploying
 
-* Change the name in `supervisord.conf`
 * Run `docker build -t BeanBot .`
 
 ## Running
