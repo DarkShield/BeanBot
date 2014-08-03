@@ -21,8 +21,4 @@ run   mkdir -p /var/log/supervisor
 add   hubot-scripts.json hubot-scripts.json
 add   ./supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
-env   HUBOT_HIPCHAT_JID [asdfID]@chat.hipchat.com
-env   HUBOT_HIPCHAT_PASSWORD [your-password]
-env   HUBOT_AUTH_ADMIN [your name]
-
 cmd   supervisord -n
