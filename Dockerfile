@@ -1,6 +1,6 @@
-from  ubuntu:12.10
+from  ubuntu:14.04
 
-run   echo "deb http://us.archive.ubuntu.com/ubuntu/ quantal main universe" > /etc/apt/sources.list
+run   echo "deb http://us.archive.ubuntu.com/ubuntu/ Trusty main universe" > /etc/apt/sources.list
 run   apt-get -y update
 run   apt-get -y install wget git redis-server
 run   apt-get -y install build-essential python
