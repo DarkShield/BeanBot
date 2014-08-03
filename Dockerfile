@@ -1,6 +1,6 @@
 from  ubuntu:12.10
 
-run   add-apt-repository "deb http://us.archive.ubuntu.com/ubuntu/ quantal main universe"
+run   echo "deb http://us.archive.ubuntu.com/ubuntu/ quantal main universe" > /etc/apt/sources.list
 run   apt-get -y update
 run   apt-get -y install wget git redis-server
 run   apt-get -y install build-essential python
