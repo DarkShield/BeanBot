@@ -8,9 +8,8 @@ The Docker container contains both Hubot as well as Redis.
 
 ## Running
 
-    docker run -e HUBOT_HIPCHAT_JID=jid \
-      -e HUBOT_HIPCHAT_PASSWORD=secret \
-      -e HUBOT_AUTH_ADMIN=admin \
+    docker run -e HUBOT_HIPCHAT_JID=$H$HUBOT_HIPCHAT_PASSWORDsecret \
+      -e HUBOT_AUTH_ADMIN=$HUBOT_AUTH_ADMIN \
       -d -p 80:80 BeanBot
 
 ## Resources
