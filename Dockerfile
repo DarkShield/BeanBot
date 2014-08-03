@@ -1,4 +1,4 @@
-from  ubuntu:14.04
+from  ubuntu:12.10
 
 run   echo "deb http://archive.ubuntu.com/ubuntu quantal main universe" > /etc/apt/sources.list
 run   apt-get -y update
