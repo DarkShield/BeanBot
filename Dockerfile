@@ -12,7 +12,7 @@ run   hubot --create .
 run   npm install --save hubot-hipchat
 run   chmod 755 bin/hubot 
 
-run   apt-get -y install supervisor
+run   apt-get -y install supervisor --fix-missing
 run   mkdir -p /var/log/supervisor
 
 add   hubot-scripts.json hubot-scripts.json
