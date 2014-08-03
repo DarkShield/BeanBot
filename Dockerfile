@@ -1,7 +1,4 @@
-# VERSION   0.2
-# DOCKER-VERSION  0.4.0
-
-from  ubuntu:12.10
+from  ubuntu:14.04
 
 run   echo "deb http://archive.ubuntu.com/ubuntu quantal main universe" > /etc/apt/sources.list
 run   apt-get -y update
