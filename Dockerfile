@@ -16,6 +16,7 @@ run   apt-get -y install supervisor --fix-missing
 run   mkdir -p /var/log/supervisor
 
 add   hubot-scripts.json hubot-scripts.json
+add   ./scripts ./scripts
 add   ./supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 cmd   supervisord -n
