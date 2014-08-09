@@ -28,8 +28,8 @@ module.exports = (robot) ->
 
     if data.deploy_exitcode is 0
       message += "Deploy succeeded!\n"
-    if data.deploy_exitcode is 1
-      message += "Deploy failed!\m"
+    if data.deploy_exitcode is undefined
+      message += "Deploy failed!\n"
     else
       message += "Didn't Deploy.\n"
 
