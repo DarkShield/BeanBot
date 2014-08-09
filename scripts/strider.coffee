@@ -28,10 +28,11 @@ module.exports = (robot) ->
 
     if data.deploy_exitcode is 0
       message += "Deploy succeeded!\n"
-    if data.deploy_exitcode is undefined
-      message += "Deploy failed!\n"
-    else
+    else if data.deploy_exitcode is undefined
       message += "Didn't Deploy.\n"
+    else if data.deploy_exitcode is 1
+      message += "Deploy Failed!\n"
+      
 
     message += "Build Details: \n" +
     			"Finish Time - #{data.finish_time}\n" +
